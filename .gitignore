@@ -1,52 +1,40 @@
-# Prerequisites
-*.d
+# compiled output
+/dist
+/tmp
+/out-tsc
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# dependencies
+/node_modules
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Precompiled Headers
-*.gch
-*.pch
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# e2e
+/e2e/*.js
+/e2e/*.map
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# System Files
+.DS_Store
+Thumbs.db
