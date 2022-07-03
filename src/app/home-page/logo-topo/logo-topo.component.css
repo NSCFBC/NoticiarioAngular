@@ -1,0 +1,25 @@
+.imgWolf{
+  height: 100px;
+  width: 100px;
+  filter: invert(99%) sepia(78%) saturate(1947%) hue-rotate(180deg) brightness(108%) contrast(105%);
+}
+.title{
+  margin-left: 40px;
+  color: aliceblue;
+  font-size: 3.5em;
+  /* text-align: center; */
+  text-transform: capitalize;
+  letter-spacing: .05em;
+  font-family: 'tituloLOGO', 'sans-serif';
+  /* text-decoration: dashed; */
+  /* align-content: center; */
+}
+.bgLogo {
+  background: linear-gradient(90deg, rgba(67,27,149,1) 0%, rgba(163,127,255,1) 100%);
+  /* border: none;
+   */
+   height: 120px;
+}
+.justify-content-center{
+  justify-content: center;
+}

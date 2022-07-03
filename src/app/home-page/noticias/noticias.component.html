@@ -1,0 +1,63 @@
+<h1 class="titulo">Noticias</h1>
+<p-table [value]="noticias" styleClass="p-datatable-striped" responsiveLayout="scroll">
+  <!-- <ng-template pTemplate="header">
+    <tr class="grid">
+      <th class="col-12 md:col-3 lg:col-3 sm:flex-nowrap ">Imagem</th>
+      <th class="col-12 md:col-8 lg:col-8">Name</th>
+      <th style="text-align:center" class="col-12 md:col-1 lg:col-1">Visualizar</th>
+    </tr>
+  </ng-template> -->
+  <ng-template pTemplate="body" let-noticia>
+    <tr class="lineTable grid cursor" (click)="showDialog(noticia); this.ngxSmartModalService.getModal('visuNotiGen').open();">
+      <td class="col-12 md:col-3 lg:col-3 sm:flex-nowrap imgSize sombraGeneric" style="background-image: url('{{noticia.caminhoImagem}}')">
+        <!-- <img [src]="noticia.src" alt="" class="imgSize"> -->
+      </td>
+      <div class="col-12 md:col-8 lg:col-8">
+        <td class="col-12 md:col-4 lg:col-4 sizeLegenda"> <span>{{noticia.dataNoticia | date:"dd/MM/yyyy"}}</span></td>
+        <td class="col-12 md:col-8 lg:col-8 sizeLegenda">
+        <span>{{noticia.categoria.nome}}</span>
+        </td>
+        <td class="col-12 md:col-12 lg:col-12 sm:flex-wrap tituloNoticia">
+          <p>{{noticia.titulo}}</p>
+          <!-- <p>{{noticia.}}</p> -->
+
+          <p>{{noticia.subtitulo}}</p>
+        </td>
+      </div>
+      <!-- <td class="col-12 md:col-1 lg:col-1">
+            <a (click)="showStandard = !showStandard"><i class="pi pi-eye centralizaIcon"></i></a></td> -->
+      <!-- <td class="col-12 md:col-1 lg:col-1">
+        comentar linha abaixo
+        <a (click)="showDialog(noticia)"><i class="pi pi-eye centralizaIcon"></i></a>
+        <a (click)="showDialog(noticia); this.ngxSmartModalService.getModal('visuNotiGen').open();"><i class="pi pi-eye centralizaIcon"></i></a>
+      </td> -->
+    </tr>
+  </ng-template>
+</p-table>
+<a [routerLink]="['/noticias']" class="linkBtn">Todas Notícias</a>
+<!-- modal secundario -->
+<!-- <ngx-modal [(visible)]="showStandard">
+  <div ngx-modal-header>
+    header
+  </div>
+  <h2>Modal Content</h2>
+  <p>
+    Hello World!
+  </p>
+  <div ngx-modal-footer>
+    footer
+  </div>
+</ngx-modal> -->
+
+
+<!-- modal primario-->
+<div class="formModal">
+  <form class="formModal">
+    <ngx-smart-modal #visuNotiGen identifier="visuNotiGen" customClass="medium-modal nsm-dialog-animation-ltr">
+      <p>{{noticia.dataNoticia}}</p>
+      <p>{{noticia.nomeCat}}</p>
+      <!-- <p>{{no}}</p> -->
+      <p>{{noticia.conteudo}}</p>
+   </ngx-smart-modal>
+  </form>
+</div>

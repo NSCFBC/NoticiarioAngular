@@ -1,0 +1,35 @@
+.imgWolf{
+  height: 400px;
+  width: 400px;
+}
+.title{
+  margin-top: 80px;
+  margin-right: 40px;
+  color: #0b0811;
+  font-size: 3.5em;
+  /* text-align: center !important; */
+  text-transform: capitalize;
+  letter-spacing: .05em;
+  font-family: 'tituloLOGO', 'sans-serif';
+  /* text-decoration: dashed; */
+  /* align-content: center; */
+
+}
+.magda{
+  color: red;
+}
+.tecto-loja{
+  text-align: center;
+  max-width: 450px;
+  line-height: 1.6em;
+  margin-top: 50px;
+}
+.bgLogo {
+  /* background: linear-gradient(90deg, rgba(67,27,149,1) 0%, rgba(163,127,255,1) 100%); */
+  /* border: none;
+   */
+   height: 520px;
+}
+.justify-content-center{
+  justify-content: center;
+}

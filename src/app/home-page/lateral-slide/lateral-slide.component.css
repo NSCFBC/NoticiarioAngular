@@ -1,0 +1,31 @@
+.imgSize{
+
+  /* max-width: 368px; */
+  border-radius: 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  height: 220px;
+  /* background-image: url(../../../assets/igm01.jpg); */
+  background-size: cover;
+  margin-top:20px;
+}
+.keyrightLeft{
+  animation: 2s rightLeft forwards;
+}
+@keyframes rightLeft {
+  from{
+    opacity: 0;
+    transform: translate3d(-60px, 0,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0,0);
+  }
+}
+.limiteCaracteres{
+  margin-top: 20px;
+  max-width: 280px;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

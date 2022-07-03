@@ -1,0 +1,57 @@
+.footer{
+  height: 300px;
+}
+.primeiro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo{
+  text-align: center;
+  color: aliceblue;
+}
+.logoFooterdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.logoFooter{
+  color: aliceblue;
+  font-size: 2em;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+.paragrafo{
+  width: 120px;
+  text-align: center;
+  color: aliceblue;
+  cursor: pointer;
+  transition: .3s;
+  padding: 15px 20px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.paragrafo:hover{
+  background : #431B95 ;
+}
+.logoFooter:hover{
+  color : #431B95 ;
+
+}
+button:hover{
+  background : #a27efe;
+}
+button{
+  color: aliceblue;
+  background : #431B95 ;
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: block !important;
+  transition: .3s;
+  margin:  0 auto;
+  text-transform: uppercase;
+  border: none !important;
+  margin-top: 20px;
+}

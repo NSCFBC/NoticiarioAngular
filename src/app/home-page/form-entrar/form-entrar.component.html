@@ -1,0 +1,13 @@
+<ngx-smart-modal #videoModal identifier="modalEntrar" customClass="medium-modal" class="nsm-dialog-animation-ltr">
+<form class="formModal" [formGroup]="cadastroForm" (ngSubmit)="login()">
+    <h1>Entrar</h1>
+    <div class="ctnCadastro">
+      <label for="email" class="lbCadastro tituloParagrafoReduzidoLabel">Email</label>
+      <input type="text" id="email" name="email" pInputText class="inputConfig" formControlName="email" />
+      <label for="senha" class="lbCadastro tituloParagrafoReduzidoLabel">Senha</label>
+      <input type="password"  id="senha" name="senha" pPassword class="inputConfig" formControlName="senha" />
+      <button pButton pRipple (click)="videoModal.close()" type="button" label="Primary" class="p-button-raised"  type="submit"></button>
+    </div>
+</form>
+</ngx-smart-modal>
+

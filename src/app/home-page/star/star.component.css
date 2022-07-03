@@ -1,0 +1,26 @@
+.imgWolf{
+  height: 400px;
+  width: 400px;
+}
+.title{
+  margin-top: 40px;
+  margin-left: 40px;
+  color: #0b0811;
+  font-size: 3.5em;
+  /* text-align: center; */
+  text-transform: capitalize;
+  letter-spacing: .05em;
+  font-family: 'tituloLOGO', 'sans-serif';
+  /* text-decoration: dashed; */
+  /* align-content: center; */
+
+}
+.bgLogo {
+  /* background: linear-gradient(90deg, rgba(67,27,149,1) 0%, rgba(163,127,255,1) 100%); */
+  /* border: none;
+   */
+   height: 520px;
+}
+.justify-content-center{
+  justify-content: center;
+}

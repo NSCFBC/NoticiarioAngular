@@ -1,0 +1,15 @@
+   <!-- <p-carousel [value]="cars" [autoplayInterval]="1500" [numVisible]="1" [numScroll]="1" [circular]="true"  [showIndicators]="true" [showNavigators]="true" > -->
+     <div class="keyrightLeft">
+
+       <p-carousel [value]="noticias" [autoplayInterval]="3000" [circular]="true">
+         <ng-template let-noticia pTemplate="item">
+           <div class="grid">
+          <div class="col-12 md:col-12 lg:col-12 sm:flex-nowrap slideConfig"
+          style="background-image: url('{{noticia.caminhoImagem}}')">
+          <p class="tituloParagrafo">{{noticia.titulo}}</p>
+          <!-- <img alt="" src="../../../assets/img0{{noticia.src}}Slide.jpg" class="imgSlide"> -->
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>

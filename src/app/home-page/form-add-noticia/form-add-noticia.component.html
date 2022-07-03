@@ -1,0 +1,34 @@
+<form class="formModal" [formGroup]="noticiaForm" (ngSubmit)="adicionarUser()">
+    <h1>Cadastrar Notícia</h1>
+    <div class="ctnCadastro">
+      <label for="noticia" class="lbCadastro tituloParagrafoReduzidoLabel">Titulo</label>
+      <input type="text" id="noticia" pInputText class="inputConfig" formControlName="titulo"  />
+      <label for="subtitulo" class="lbCadastro tituloParagrafoReduzidoLabel">Subtitulo</label>
+      <input type="text" id="subtitulo" pInputText class="inputConfig" formControlName="subtitulo"  />
+      <label for="categorias" class="lbCadastro tituloParagrafoReduzidoLabel">Categoria</label>
+      <p-cascadeSelect [(ngModel)]="option" [options]="categorias" optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['states', 'cities']" [style]="{'minWidth': '14rem', 'margin-left': '200px'}" class="inputConfig" >
+        <ng-template pTemplate="option" let-option>
+          <div class="country-item" (click)="mudarCategoria(option)">
+              <i class="pi pi-map-marker p-mr-2" *ngIf="option.cname"></i>
+              <span> {{option.cname || option.name}}</span>
+          </div>
+      </ng-template>
+      </p-cascadeSelect>
+
+      <!-- <label for="data" class="lbCadastro tituloParagrafoReduzidoLabel">Data</label>
+      <p-calendar [(ngModel)]="date" dateFormat="dd/mm/yy" inputId="dateformat" class="inputConfig"  formControlName="data"
+      ></p-calendar> -->
+
+
+
+
+      <label for="data" class="lbCadastro tituloParagrafoReduzidoLabel">Notícia</label>
+      <!-- <textarea rows="30" cols="30" pInputTextarea [autoResize]="true" class="inputConfigs" formControlName="conteudo" placeholder="Insira o notícia aqui" style="min-height: 40px"></textarea> -->
+      <p-editor formControlName="conteudo" [style]="{'height':'320px'}"></p-editor>
+
+
+      <button pButton pRipple type="submit" label="Primary" class="p-button-raised"></button>
+
+
+    </div>
+</form>

@@ -1,0 +1,24 @@
+.bgBaixo{
+  height: 200px;
+  background-image: url(../../../assets/img010.jpg);
+  background-size: cover;
+}
+.bgBaixoSecond{
+  height: 200px;
+  background-image: url(../../../assets/img011.jpg);
+  background-size: cover;
+}
+.keyrightLeft{
+  animation: 2s rightLeft forwards;
+}
+@keyframes rightLeft {
+  from{
+    opacity: 0;
+    transform: translate3d(-60px, 0,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0,0);
+  }
+}
+

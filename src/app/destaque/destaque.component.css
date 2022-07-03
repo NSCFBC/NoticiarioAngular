@@ -1,0 +1,52 @@
+.titulo{
+  text-align: center;
+}
+
+.paragrafo.subtitulo{
+  font-size: 0.85em;
+}
+.mgDestaque{
+  margin: 10px auto;
+}
+.mgContent{
+  margin-top: 20px;
+}
+.nmrDestaque{
+  display : block;
+  font-size: 2.5em;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #A27EFE;
+  border-radius: 7px;
+  justify-content: center;
+  margin-top:20px;
+}
+.paragrafo{
+  text-align : center;
+}
+.subtitulo{
+  text-align : center;
+}
+.paragrafo{
+  font-size: 1em;
+}
+.subtituloDestaque{
+  font-size: 0.75rem;
+  color: #A27EFE;
+  text-align : center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.keyLeftRight{
+  animation: 2s leftRight forwards;
+}
+@keyframes leftRight {
+  from{
+    opacity: 0;
+    transform: translate3d(60px, 0,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0,0);
+  }
+}

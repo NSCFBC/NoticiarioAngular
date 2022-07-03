@@ -1,0 +1,15 @@
+.bgBR{
+  color: aliceblue;
+  font-weight: normal;
+  margin: 40px auto;
+  background:  #A27EFE;
+ padding: 0.85em;
+}
+ul li:first-child{
+  background: red !important;
+}
+.bgCategoriabl{
+  margin: 0 auto;
+}
+
+

@@ -1,0 +1,28 @@
+
+.btnEnviar{
+  display: block;
+}
+.frm-user{
+  width: 400px;
+
+  /* background:tomato; */
+  margin: 0 auto;
+}
+.frm-user h5, .frm-user input{
+  margin: 0 auto;
+}
+/* .frm-user[_ngcontent-qfp-c60].h5[_ngcontent-qfp-c60]{
+
+  margin: 20px auto !important;
+} */
+.p-inputtext.p-component.p-element{
+  display: block;
+  margin: 20px auto !important;
+}
+.p-button {
+  display: block !important;
+  margin: 0 auto !important;
+}
+/* a.p-ripple.p-element.p-menuitem-link.ng-star-inserted.p-menuitem-link-active{
+  background: red !important;
+} */

@@ -1,0 +1,12 @@
+<!-- <div class="col-12 md:col-12 lg:col-12 sm:flex-nowrap"> -->
+    <div class="grid">
+    <p-tabMenu [model]="items" class="col-12 md:col-12 lg:col-12 bgCategoriabl">
+      <ng-template pTemplate="item" let-item let-i="index"  class="bgBR">
+        <h5 class="bgBR">
+          {{item.label}}
+          <i class="{{item.icon}}"></i>
+        </h5>
+      </ng-template>
+    </p-tabMenu>
+  </div>
+<!-- </div> -->

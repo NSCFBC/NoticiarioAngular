@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+*{
+  box-sizing: border-box !important;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.p-menubar,.p-ripple.p-element.p-menuitem-link,.p-ripple.p-element.p-menuitem-link:hover ,.p-menubar-button:hover,.pi .pi.bars:hover{
+  display: flex !important;
+  align-items: center !important;
+  background: rgb(67,27,149);
+  /* background: red; */
+  background: linear-gradient(90deg, rgba(67,27,149,1) 0%, rgba(163,127,255,1) 100%);
+
+}
+/* .p-ripple.p-element.p-menuitem-link.ng-star-inserted{
+  padding: 0;
+} */
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link{
+  background: #431B95 !important;
+  padding: 0.90em;
+  margin-left: 20px;
+}
+/* .p-ripple.p-element.p-menuitem-link, .p-ripple.p-element.p-menuitem-link:hover{
+  background: #431B95 !important;
+
+} */
+.p-ripple.p-element.p-menuitem-link:hover,.p-ripple.p-element.p-menuitem-link:visited,.p-ripple.p-element.p-menuitem-link:scope, .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link{
+  /* background: #a27efe !important; */
+  background: #431B95 !important;
+}
+.p-menuitem-text, .p-menubar.p-menuitem-link.p-menuitem-icon,.p-submenu-icon,.p-menuitem-icon,.pi.pi-bars{
+  color: aliceblue !important;
+  background: transparent;
+}
+@font-face {
+  font-family: titulo;
+  src: url(assets/DarkerGrotesque-Medium.ttf);
+}
+@font-face {
+  font-family: tituloParagrafo;
+  src: url(assets/DarkerGrotesque-Regular.ttf);
+}
+@font-face {
+  font-family: paragrafo;
+  src: url(assets/LinguisticsPro-Regular.otf);
+}
+@font-face {
+  font-family: paragrafoItalico;
+  src: url(assets/LinguisticsPro-Italic.otf);
+}
+@font-face {
+  font-family: tituloLOGO;
+  src: url(assets/handlee-regular.ttf);
+}
+.paragrafo{
+  font-family: 'paragrafo', 'serif';
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+.paragrafoItalico{
+  font-family: 'paragrafoItalico', 'serif';
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+.tituloParagrafo{
+    font-family: 'tituloParagrafo', 'sans-serif';
+    font-size: 2.25em;
+    text-transform: capitalize;
+}
+.tituloParagrafoReduzido{
+  font-family: 'tituloParagrafo', 'sans-serif';
+  font-size: 1.75em;
+  text-transform: capitalize;
+}
+.titulo{
+  font-family: 'titulo', 'sans-serif';
+  font-size: 2.25em;
+  text-transform: capitalize;
+}
+.titulo::after{
+  content: "";
+  display: block;
+  width:8px;
+  height:8px;
+  background: #4C1A8E;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.ng-star-inserted.p-carousel-indicator.p-highlight .p-link{
+  background: #A27EFE !important;
+  display: block;
+  width:8px;
+  height:8px;
+  /* f8f9fa */
+  background: #4C1A8E;
+  border-radius: 50%;
+}
+.p-carousel.p-carousel-indicators.p-carousel-indicator>button{
+  display: block;
+  width:8px;
+  height:8px;
+}
+.tituloParagrafoReduzido{
+  color: azure;
+    padding-left: 20px;
+    /* z-index: 111; */
+    margin-top: 120px !important;
+}
+.tituloParagrafoReduzidoLabel{
+  font-family: 'tituloParagrafo', 'sans-serif';
+  font-size: 1.75em;
+  text-transform: capitalize;
+  color: azure;
+}
+.tituloParagrafoReduzidoNotFound{
+  font-family: 'tituloParagrafo', 'sans-serif';
+  font-size: 1.75em;
+  text-transform: capitalize;
+  color: azure;
+}
+
+/* .p-inputtext.p-component.p-element.inputConfig{
+  display: block !important;
+  margin: 0 auto !important;
+} */
+.p-cascadeselect, .p-calendar{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 350px !important;
+  height: 40px !important;
+}
+/* .p-dialog-header{
+  background: red !important;
+} */
+.p-tabmenu .p-tabmenu-nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: none;
+}
+
+
+.lbnCamposInvalido{
+  text-align: center;
+}
+.sombraGeneric{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.p-datatable.p-datatable-striped .p-datatable-tbody > tr:nth-child(even) span {
+  /* color: aliceblue; */
+  color: #0b0811;
+}
+
+.p-datatable.p-datatable-striped .p-datatable-tbody > tr:nth-child(even) {
+  /* background: #a27efe; */
+  background: #f8f9fa;
+
+  color: aliceblue;
+}
+
+.footer{
+  background: rgb(67,27,149);
+  background: linear-gradient(90deg, rgba(67,27,149,1) 0%, rgba(163,127,255,1) 100%);
+  height: 200px;
+}
+
+.grid[_ngcontent-kks-c101] {
+  max-width: 0;
+   margin: 0 auto;
+}
+
+@import "~ngx-smart-modal/ngx-smart-modal.css";
+/* @import "app/app.component.css"; */
+
+/* a.p-ripple.p-element.p-menuitem-link.ng-star-inserted.p-menuitem-link-active{
+  background: red !important;
+} */
+

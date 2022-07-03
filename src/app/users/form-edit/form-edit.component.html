@@ -1,0 +1,25 @@
+  <form class="formModal" [formGroup]="cadastroForm" (ngSubmit)="adicionarUser()">
+  <div class="ctnCadastro">
+    <label for="nome" class="lbCadastro tituloParagrafoReduzidoLabel">Nome</label>
+    <label id="lSenhaRequired" class="text-danger" *ngIf="cadastroForm.get('nome')?.errors?.['rangeLength'] && (cadastroForm.get('nome')?.dirty || cadastroForm.get('nome')?.touched)
+    || cadastroForm.get('nome')?.errors?.['required'] && (cadastroForm.get('nome')?.dirty || cadastroForm.get('nome')?.touched)
+    " class="lbnCamposInvalido">
+   {{displayMessage['nome']}} </label>
+    <input type="text" id="nome" pInputText class="inputConfig" formControlName="nome" placeholder="{{user.nome}}" [(ngModel)]="user.nome"/>
+    <label for="email" class="lbCadastro tituloParagrafoReduzidoLabel">Email</label>
+    <label id="lbEamilRequired" class="text-danger" *ngIf="cadastroForm.get('email')?.errors?.['email'] && (cadastroForm.get('email')?.dirty || cadastroForm.get('email')?.touched)
+    || cadastroForm.get('email')?.errors?.['required'] && (cadastroForm.get('email')?.dirty || cadastroForm.get('email')?.touched)" class="lbnCamposInvalido">
+      {{displayMessage['email']}} </label>
+
+    <input type="text" id="email" pInputText class="inputConfig" formControlName="email" placeholder="{{user.email}}" [(ngModel)]="user.email"  />
+    <label for="senha" class="lbCadastro tituloParagrafoReduzidoLabel">Senha</label>
+    <label id="lSenhaRequired" class="text-danger" *ngIf="cadastroForm.get('senha')?.errors?.['rangeLength'] && (cadastroForm.get('senha')?.dirty || cadastroForm.get('senha')?.touched)
+    || cadastroForm.get('senha')?.errors?.['required'] && (cadastroForm.get('senha')?.dirty || cadastroForm.get('senha')?.touched)
+    " class="lbnCamposInvalido">
+   {{displayMessage['senha']}} </label>
+    <input type="password"  id="senha" pPassword class="inputConfig" formControlName="senha"
+    [(ngModel)]="user.senha" />
+
+    <button [disabled]="!cadastroForm.valid"  pButton pRipple type="submit" label="Cadastrar-se" class="p-button-raised">Atualizar</button>
+  </div>
+</form>

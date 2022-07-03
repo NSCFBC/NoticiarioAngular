@@ -1,0 +1,31 @@
+.slideConfig{
+  height: 400px;
+  /* background-image: url(../../../assets/img03Slide.jpg); */
+  background-size: cover;
+  border-radius: 15px !important;
+}
+.tituloParagrafo{
+  color: azure;
+  padding-left: 20px;
+  z-index: 111;
+  margin-top: 300px !important;
+}
+.imgSlide{
+  display: inline-block;
+}
+.p-link{
+  background: #A27EFE !important;
+}
+.keyrightLeft{
+  animation: 2s rightLeft forwards;
+}
+@keyframes rightLeft {
+  from{
+    opacity: 0;
+    transform: translate3d(-60px, 0,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0,0);
+  }
+}

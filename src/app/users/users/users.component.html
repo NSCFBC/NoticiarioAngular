@@ -1,0 +1,21 @@
+<p-table [value]="usuarios" styleClass="p-datatable-striped" responsiveLayout="scroll">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th id="edit">Editar</th>
+          <th id="trash">Deletar</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-usuario>
+      <tr>
+          <td>{{usuario.nome}}</td>
+          <td>{{usuario.email}}</td>
+          <td><i class="pi pi-pencil edit" [routerLink]="['editar/',usuario.id]"></i></td>
+          <!-- <td>{{id}}</td> -->
+          <td><i class="pi pi-trash trash" (click)="deletar(usuario.id)"></i></td>
+
+      </tr>
+  </ng-template>
+</p-table>
+

@@ -1,0 +1,12 @@
+
+<h1 class="titulo keyLeftRight" >Destaques </h1>
+<ul *ngFor="let noticia of topDezNoticias let i = index" [attr.data-index]="i" class="keyLeftRight">
+  <li class="grid mgDestaque">
+    <span class="col-12 md:col-6 lg:col-2 nmrDestaque sombraGeneric">{{i+1}}</span>
+    <div class="col-12 md:col-6 lg:col-10 mgContent">
+      <h3 class="paragrafo">{{noticia.titulo}}</h3>
+      <h3 class="subtituloDestaque">{{noticia.subtitulo}}</h3>
+      <!-- <p class="paragrafo subtitulo">{{noticia.subtitulo}}</p> -->
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,19 @@
+.trash, .edit {
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#trash {
+  text-align: center;
+}
+ #edit {
+  text-align: center;
+}
+
+.trash:hover, .edit:hover {
+  cursor: pointer !important;
+}
+.p-datatable .p-datatable-thead > tr > th{
+  text-align: center !important;
+}
